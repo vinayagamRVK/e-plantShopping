@@ -1,7 +1,7 @@
 // App.jsx
 import React, { useState } from "react";
 import ProductList from "./ProductList";
-import CartItems from "./CartItems";
+import CartItem from "./CartItem";
 
 function App() {
   const [showProductList, setShowProductList] = useState(true);
@@ -15,7 +15,7 @@ function App() {
       {showProductList ? (
         <ProductList />
       ) : (
-        <CartItems onContinueShopping={handleContinueShopping} />
+        <CartItem onContinueShopping={handleContinueShopping} />
       )}
     </div>
   );
