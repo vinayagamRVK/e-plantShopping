@@ -1,5 +1,8 @@
-
 import React, { useState } from 'react';
+// Remove these lines since Provider is now in main.jsx:
+// import { Provider } from 'react-redux';
+// import store from './store';
+
 import ProductList from './ProductList';
 import './App.css';
 import AboutUs from './AboutUs';
@@ -17,6 +20,7 @@ function App() {
   };
 
   return (
+    // Remove Provider wrapper - it's now in main.jsx
     <div className="app-container">
       <div className={`landing-page ${showProductList ? 'fade-out' : ''}`}>
         <div className="background-image"></div>
@@ -44,6 +48,3 @@ function App() {
 }
 
 export default App;
-
-
-
